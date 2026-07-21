@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="../MentoringProtector_service/MentoringProtector_service.vcxproj" Id="b2c3d4e5-f6a7-8901-bcde-f23456789012">
+    <Platform Project="x64" />
+  </Project>
+  <Project Path="MentoringProtector_core.vcxproj" Id="0570f572-bb39-4cd0-bfe5-a6bf3e9ef6a7" />
+  <Project Path="MentoringProtector_tests/MentoringProtector_tests.vcxproj" Id="c3e3659c-88b8-608b-039b-c4f2805a0e0a">
+    <BuildDependency Project="MentoringProtector_core.vcxproj" />
+    <Platform Project="x64" />
+  </Project>
+</Solution>

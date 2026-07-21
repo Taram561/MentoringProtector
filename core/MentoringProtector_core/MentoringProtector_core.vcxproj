@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0570f572-bb39-4cd0-bfe5-a6bf3e9ef6a7}</ProjectGuid>
+    <RootNamespace>MentoringProtector</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <ProjectName>MentoringProtector_core</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;MENTORINGPROTECTORCORE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;MENTORINGPROTECTORCORE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;MENTORINGPROTECTORCORE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\core\MentoringProtector_core;%(AdditionalIncludeDirectories);$(ProjectDir)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>ws2_32.lib;crypt32.lib;tdh.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;MENTORINGPROTECTORCORE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\core\MentoringProtector_core;%(AdditionalIncludeDirectories);$(ProjectDir)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>ws2_32.lib;crypt32.lib;tdh.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="exports.h" />
+    <ClInclude Include="service_ipc_client.h" />
+    <ClInclude Include="..\MentoringProtector_service\service_pipe_protocol.h" />
+    <ClInclude Include="json_utils.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="heuristic\heuristic.h" />
+    <ClInclude Include="heuristic\crl_updater.h" />
+    <ClInclude Include="logger\logger.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="process_analyzer\process_analyzer.h" />
+    <ClInclude Include="quarantine\quarantine.h" />
+    <ClInclude Include="scanner\scanner.h" />
+    <ClInclude Include="scanner\file_hasher.h" />
+    <ClInclude Include="scanner\i_scan_engine.h" />
+    <ClInclude Include="signatures\signatures.h" />
+    <ClInclude Include="threat_info\threat_info.h" />
+    <ClInclude Include="vulnerability\vulnerability_scanner.h" />
+    <ClInclude Include="web_protection\http_server.h" />
+    <ClInclude Include="web_protection\phishing_db.h" />
+    <ClInclude Include="web_protection\url_checker.h" />
+    <ClInclude Include="web_protection\web_protection_exports.h" />
+    <ClInclude Include="web_protection\auth_token.h" />
+    <ClInclude Include="web_protection\bloom_filter.h" />
+    <ClInclude Include="web_protection\url_heuristics.h" />
+    <ClInclude Include="realtime_monitor\realtime_monitor.h" />
+    <ClInclude Include="memory_scanner\memory_scanner.h" />
+    <ClInclude Include="etw_monitor\etw_monitor.h" />
+    <ClInclude Include="sandbox\sandbox_process.h" />
+    <ClInclude Include="sandbox\sandbox_monitor.h" />
+    <ClInclude Include="sandbox\sandbox_manager.h" />
+    <ClInclude Include="scanner\scan_result.h" />
+    <ClInclude Include="nudge\nudge.h" />
+    <ClInclude Include="nudge\inudge_sink.h" />
+    <ClInclude Include="nudge\nudge_engine.h" />
+    <ClInclude Include="nudge\motw_reader.h" />
+    <ClInclude Include="nudge\tray_notifier.h" />
+    <ClInclude Include="nudge\script_guard.h" />
+    <ClInclude Include="nudge\usb_monitor.h" />
+    <ClInclude Include="archive_scanner\iextractor.h" />
+    <ClInclude Include="archive_scanner\archive_scanner.h" />
+    <ClInclude Include="archive_scanner\zip_extractor.h" />
+    <ClInclude Include="archive_scanner\seven_zip_extractor.h" />
+    <ClInclude Include="archive_scanner\iso_extractor.h" />
+    <ClInclude Include="archive_scanner\miniz.h" />
+    <ClInclude Include="archive_scanner\miniz_common.h" />
+    <ClInclude Include="archive_scanner\miniz_tdef.h" />
+    <ClInclude Include="archive_scanner\miniz_tinfl.h" />
+    <ClInclude Include="archive_scanner\miniz_zip.h" />
+    <ClInclude Include="archive_scanner\miniz_export.h" />
+    <ClInclude Include="yara\yara_scanner.h" />
+    <ClInclude Include="stats\stats_recorder.h" />
+    <ClInclude Include="stats\stats_storage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="exports.cpp" />
+    <ClCompile Include="service_ipc_client.cpp" />
+    <ClCompile Include="..\MentoringProtector_service\service_pipe_protocol.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="heuristic\heuristic.cpp" />
+    <ClCompile Include="heuristic\crl_updater.cpp" />
+    <ClCompile Include="yara\yara_scanner.cpp" />
+    <ClCompile Include="logger\logger.cpp" />
+    <ClCompile Include="main_test.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="process_analyzer\process_analyzer.cpp" />
+    <ClCompile Include="quarantine\quarantine.cpp" />
+    <ClCompile Include="scanner\scanner.cpp" />
+    <ClCompile Include="scanner\file_hasher.cpp" />
+    <ClCompile Include="signatures\signatures.cpp" />
+    <ClCompile Include="threat_info\threat_info.cpp" />
+    <ClCompile Include="vulnerability\vulnerability_scanner.cpp" />
+    <ClCompile Include="web_protection\http_server.cpp" />
+    <ClCompile Include="web_protection\phishing_db.cpp" />
+    <ClCompile Include="web_protection\url_checker.cpp" />
+    <ClCompile Include="web_protection\web_protection_exports.cpp" />
+    <ClCompile Include="web_protection\auth_token.cpp" />
+    <ClCompile Include="web_protection\bloom_filter.cpp" />
+    <ClCompile Include="web_protection\url_heuristics.cpp" />
+    <ClCompile Include="realtime_monitor\realtime_monitor.cpp" />
+    <ClCompile Include="memory_scanner\search.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="memory_scanner\memory_scanner.cpp" />
+    <ClCompile Include="etw_monitor\etw_monitor.cpp" />
+    <ClCompile Include="sandbox\sandbox_process.cpp" />
+    <ClCompile Include="sandbox\sandbox_monitor.cpp" />
+    <ClCompile Include="nudge\nudge_engine.cpp" />
+    <ClCompile Include="nudge\motw_reader.cpp" />
+    <ClCompile Include="nudge\tray_notifier.cpp" />
+    <ClCompile Include="nudge\script_guard.cpp" />
+    <ClCompile Include="nudge\usb_monitor.cpp" />
+    <ClCompile Include="sandbox\sandbox_manager.cpp" />
+    <ClCompile Include="archive_scanner\archive_scanner.cpp" />
+    <ClCompile Include="archive_scanner\zip_extractor.cpp" />
+    <ClCompile Include="archive_scanner\seven_zip_extractor.cpp" />
+    <ClCompile Include="archive_scanner\iso_extractor.cpp" />
+    <ClCompile Include="archive_scanner\miniz.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="archive_scanner\miniz_tdef.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="archive_scanner\miniz_tinfl.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="archive_scanner\miniz_zip.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stats\stats_recorder.cpp" />
+    <ClCompile Include="stats\stats_storage.cpp" />
+    <ClCompile Include="stats\stats_exports.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\updater\fetch_signatures.py" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\Microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn.1.8.1.8\build\native\Microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn.targets" Condition="Exists('packages\Microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn.1.8.1.8\build\native\Microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn.1.8.1.8\build\native\Microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn.1.8.1.8\build\native\Microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,5 @@
+{
+  "_comment": "TLS SPKI-пины (SHA-256 SubjectPublicKeyInfo, base64) для database.clamav.net. ПУСТОЙ список = pinning ОТКЛЮЧЁН (полагаемся на TLS + strict RSA-dsig). Чтобы включить defense-in-depth pinning: python fetch_signatures.py --record-pin (требует пакет 'cryptography'), затем сверьте записанный SPKI и при ротации сертификата ClamAV обновите список. fail-closed: при включённых пинах любой провал проверки блокирует апдейт.",
+  "host": "database.clamav.net",
+  "spki_sha256": []
+}

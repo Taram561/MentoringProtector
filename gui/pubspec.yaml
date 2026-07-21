@@ -1,0 +1,38 @@
+name: mentoring_protector
+description: MentoringProtector Antivirus
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  ffi: ^2.1.0
+  file_picker: ^11.0.2
+  flutter_animate: ^4.3.0
+  intl: ^0.20.0
+  shared_preferences: ^2.5.4   # ← сохранение настроек
+  provider: ^6.1.1              # ← state management
+  path: ^1.9.0                  # ← платформо-независимые пути
+  window_manager: ^0.5.1         # ← кастомный title bar
+  http: ^1.2.0                   # ← CVD downloader + onboarding /health check
+  url_launcher: ^6.2.0           # ← Learn More links in VulnDetailSheet
+  archive: ^3.4.0                # ← CVD tar/bzip2 extraction
+  crypto: ^3.0.0                 # ← MD5 validation of CVD header checksum
+
+flutter:
+  generate: true                # ← для локализации
+  uses-material-design: true
+  assets:
+    - assets/
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
